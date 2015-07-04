@@ -460,80 +460,13 @@ input[type="button"]:focus {
   left: 0;
 }
 
-body {
-  margin: 10px;
-  background-color: #ddd;
-  overflow-x: hidden;
-}
-
-.page-home {
-  text-align: center;
-}
-
-.page-home section {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 40px;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.page-home section:first-child {
-  background-image: url(../img/tools.png);
-  background-position: center;
-}
-
-.page-home section h1 {
-  font-weight: 700;
-  line-height: 1;
-  margin: 20px 0;
-  letter-spacing: 1px;
-}
-
-.page-home img {
-  max-width: 100%;
-}
-
-.page-home .flex-video-wrap {
-  max-width: 640px;
-  display: inline-block;
-  width: 100%;
-}
-
-.page-home pre {
-  text-align: left;
-  font-family: 'Fira Mono', monospace;
-  font-size: 30px;
-  color: #d0d0d0;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: -1;
-  pointer-events: none;
-}
-
-@media (max-width: 500px) {
-  .page-home pre {
-    font-size: 20px;
-  }
-}
-
-.page-home article {
-  margin-bottom: 50px;
-}
-
-.page-home article:last-child {
-  margin-bottom: 0px;
-}
-
 .header {
   max-width: 1020px;
   max-height: 350px;
   text-align: center;
-  border: 2px black solid;
   background-image: url(/assets/img/header-bg.jpg);
   background-position: center;
+  margin: 0 auto;
 }
 
 .header nav {
@@ -585,4 +518,167 @@ body {
   font-size: 20px;
   font-weight: 400;
   mix-blend-mode: overlay;
+}
+
+@media screen and (max-width: 650px) {
+  .header h1 {
+    font-size: 40px;
+  }
+  .header h1 .title-lockup {
+    border: rgba(0, 0, 0, 0.2) 10px solid;
+  }
+  .header h2 {
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+}
+
+body {
+  background-color: #ddd;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+}
+
+.aboutme {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aboutme h3 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.aboutme div {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.aboutme [class^="icon-"] {
+  margin: 20px;
+  background: #e1e1e1;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.aboutme [class^="icon-"] path {
+  fill: #6597CA;
+}
+
+.aboutme [class^="icon-"].icon-music {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+  -webkit-order: 1;
+  -moz-order: 1;
+  order: 1;
+  -ms-flex-order: 1;
+}
+
+.aboutme [class^="icon-"].icon-positive {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  box-ordinal-group: 2;
+  -webkit-order: 2;
+  -moz-order: 2;
+  order: 2;
+  -ms-flex-order: 2;
+}
+
+.aboutme [class^="icon-"].icon-coffee {
+  -webkit-box-ordinal-group: 4;
+  -moz-box-ordinal-group: 4;
+  box-ordinal-group: 4;
+  -webkit-order: 4;
+  -moz-order: 4;
+  order: 4;
+  -ms-flex-order: 4;
+}
+
+.aboutme [class^="icon-"].icon-talk {
+  -webkit-box-ordinal-group: 5;
+  -moz-box-ordinal-group: 5;
+  box-ordinal-group: 5;
+  -webkit-order: 5;
+  -moz-order: 5;
+  order: 5;
+  -ms-flex-order: 5;
+}
+
+.aboutme .avatar {
+  height: 200px;
+  width: 200px;
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  box-ordinal-group: 3;
+  -webkit-order: 3;
+  -moz-order: 3;
+  order: 3;
+  -ms-flex-order: 3;
+}
+
+.aboutme .avatar img {
+  border-radius: 50%;
+}
+
+.aboutme p {
+  max-width: 620px;
+  padding: 0 20px;
+  margin: 50px auto;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 650px) {
+  .aboutme {
+    display: block;
+    text-align: center;
+  }
+  .aboutme div {
+    display: inline-block;
+  }
+  .aboutme .avatar {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto 30px;
+  }
+  .aboutme [class^="icon-"] {
+    margin: 10px 9%;
+  }
 }

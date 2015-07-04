@@ -1,0 +1,73 @@
+@import 'bourbon'
+
+.aboutme
+  max-width: 800px
+  // border: 1px red solid
+  margin: 0 auto
+
+  h3
+    text-transform: uppercase
+    padding-top: 20px
+    padding-bottom: 40px
+    font:
+      family: "HelveticaNeue-CondensedBold"
+      size: 20px
+      weight: 400
+
+  div
+    +display(inline-flex)
+    // margin: 0 auto
+    +align-items(center)
+    +justify-content(space-between)
+
+  [class^="icon-"]
+    margin: 20px
+    background: #e1e1e1
+    border-radius: 50%
+    +size(100px)
+    path
+      fill: #6597CA
+
+    &.icon-music
+      +order(1)
+    &.icon-positive
+      +order(2)
+    &.icon-coffee
+      +order(4)
+    &.icon-talk
+      +order(5)
+
+  .avatar
+    +size(200px)
+    +order(3)
+
+    img
+      border-radius: 50%
+
+
+  p
+    max-width: 620px
+    padding: 0 20px
+    margin: 50px auto
+    font-size: 24px
+    text-align: center
+    font-weight: 300
+    padding-bottom: 60px
+
+@media screen and (max-width: 650px)
+  .aboutme
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+
+    .avatar
+      display: block
+      background:
+        position: center center
+        repeat: no-repeat
+      margin: 0 auto 30px
+
+    [class^="icon-"]
+      margin: 10px 9%
