@@ -1,0 +1,58 @@
+
+.header
+  max-width: 1020px
+  max-height: 350px
+  text-align: center
+  border: 2px black solid
+  background:
+    image: url(/assets/img/header-bg.jpg)
+    position: center
+
+  nav
+    float: right
+    padding: 30px 30px 0 0
+
+    a
+      text-transform: uppercase
+      margin-left: 20px
+      font:
+        family: "HelveticaNeue-CondensedBold"
+        size: 15px
+        weight: bold
+
+      color: rgba(0,0,0,0.5)
+      @extend %small-bold
+
+      &:hover
+        color: rgba(0,0,0,1)
+        font-weight: 900
+
+  h1
+    font:
+      family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+      size: 60px
+      weight: 700
+    color: black
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 20px
+    clear: both
+    padding-top: 60px
+    mix-blend-mode: overlay
+
+    span
+    .title-lockup
+        border:  rgba(0,0,0,0.2) 15px solid
+        padding: 0.2em 0.5em
+    .thin
+      font-weight: 200
+
+  h2
+    text-transform: uppercase
+    padding-top: 30px
+    padding-bottom: 100px
+    font:
+      family: "HelveticaNeue-CondensedBold"
+      size: 20px
+      weight: 400
+    mix-blend-mode: overlay
