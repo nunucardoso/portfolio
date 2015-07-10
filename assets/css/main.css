@@ -342,6 +342,15 @@ hr {
   height: 0;
 }
 
+h3 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .button,
 button,
 input[type="submit"],
@@ -460,6 +469,14 @@ input[type="button"]:focus {
   left: 0;
 }
 
+.break {
+  border-width: 1px;
+  border-color: rgba(0, 22, 33, 0.2);
+  border-style: solid;
+  width: 447px;
+  margin: 0 auto;
+}
+
 .header {
   max-width: 1020px;
   max-height: 350px;
@@ -478,7 +495,7 @@ input[type="button"]:focus {
   text-transform: uppercase;
   margin-left: 20px;
   font-family: "HelveticaNeue-CondensedBold";
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -547,15 +564,6 @@ body {
 .aboutme {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.aboutme h3 {
-  text-transform: uppercase;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  font-family: "HelveticaNeue-CondensedBold";
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .aboutme div {
@@ -661,7 +669,7 @@ body {
   font-size: 24px;
   text-align: center;
   font-weight: 300;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 650px) {
@@ -681,4 +689,41 @@ body {
   .aboutme [class^="icon-"] {
     margin: 10px 9%;
   }
+}
+
+.footer {
+  max-width: 1020px;
+  height: 150px;
+  background-image: url(/assets/img/footer-bg.jpg);
+  background-position: center;
+}
+
+.footer nav {
+  padding: 30px 30px 20px 30px;
+}
+
+.footer nav a {
+  float: left;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer nav a:hover {
+  color: black;
+  font-weight: 900;
+}
+
+.footer .copyright {
+  margin: 0;
+  padding: 20px 0 0 50px;
+  font-size: 15px;
+  font-family: "HelveticaNeue-CondensedBold";
+  color: #474c50;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
 }

@@ -1,0 +1,34 @@
+.footer
+  max-width: 1020px
+  height: 150px
+  background:
+    image: url(/assets/img/footer-bg.jpg)
+    position: center
+
+  nav
+    padding: 30px 30px 20px 30px
+    a
+      float: left
+      text-transform: uppercase
+      margin-left: 20px
+      font:
+        family: "HelveticaNeue-CondensedBold"
+        size: 20px
+        weight: bold
+
+      color: rgba(0,0,0,0.5)
+      @extend %small-bold
+
+      &:hover
+        color: rgba(0,0,0,1)
+        font-weight: 900
+
+  .copyright
+    margin: 0
+    padding: 20px 0 0 50px
+    font-size: 15px
+    font-family: "HelveticaNeue-CondensedBold"
+    color: rgb(71, 76, 80)
+    font-weight: bold
+    text-transform: uppercase
+    text-align: left
