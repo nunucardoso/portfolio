@@ -1,0 +1,67 @@
+.contacts
+  address
+    margin:0
+    padding:0
+    a
+      color: rgba(0,0,0,0.7)
+      font-family: $georgia
+      font-size: 40px
+      font-style: normal
+
+      &:hover
+        color: rgba(0,0,0,1)
+
+.social-links
+  margin: 0 auto
+  max-width: 380px
+  +display(flex)
+  +flex-direction(row)
+  +justify-content(space-around)
+  a
+    margin: 20px 0 40px 0
+    opacity: 0.7
+    path
+      fill: #022849
+
+    &:hover
+        opacity: 1
+
+.form-lockup
+  margin:0 auto
+  width: 600px
+  margin-bottom: 60px
+
+  input, textarea
+    border: 2px black solid
+    background-color: rgb(210, 219, 226)
+    text-transform: uppercase
+    padding: 10px 0 10px 20px
+    width: 265px
+    font:
+      family: "HelveticaNeue-CondensedBold"
+      size: 20px
+      weight: 400
+
+  textarea
+    margin-top: 20px
+    width: 575px
+    height: 200px
+
+.form-top
+  +display(flex)
+  +flex-direction(row)
+  +justify-content(space-between)
+
+.button
+  border: 0
+  margin-top: 20px
+  width: 600px
+  text-align: right
+
+  #button
+    background-color: #4e6b82
+    color: white
+    height: 50px
+    width: 130px
+    padding: 0
+    border-radius: 0

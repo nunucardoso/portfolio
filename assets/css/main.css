@@ -342,10 +342,14 @@ hr {
   height: 0;
 }
 
+#contacts {
+  padding-bottom: 0px;
+}
+
 h3 {
   text-transform: uppercase;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-family: "HelveticaNeue-CondensedBold";
   font-size: 20px;
   font-weight: 400;
@@ -731,4 +735,132 @@ body {
 
 .footer .copyright span {
   color: #022849;
+}
+
+.contacts address {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts address a {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.contacts address a:hover {
+  color: black;
+}
+
+.social-links {
+  margin: 0 auto;
+  max-width: 380px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+}
+
+.social-links a {
+  margin: 20px 0 40px 0;
+  opacity: 0.7;
+}
+
+.social-links a path {
+  fill: #022849;
+}
+
+.social-links a:hover {
+  opacity: 1;
+}
+
+.form-lockup {
+  margin: 0 auto;
+  width: 600px;
+  margin-bottom: 60px;
+}
+
+.form-lockup input, .form-lockup textarea {
+  border: 2px black solid;
+  background-color: #d2dbe2;
+  text-transform: uppercase;
+  padding: 10px 0 10px 20px;
+  width: 265px;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-lockup textarea {
+  margin-top: 20px;
+  width: 575px;
+  height: 200px;
+}
+
+.form-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.button {
+  border: 0;
+  margin-top: 20px;
+  width: 600px;
+  text-align: right;
+}
+
+.button #button {
+  background-color: #4e6b82;
+  color: white;
+  height: 50px;
+  width: 130px;
+  padding: 0;
+  border-radius: 0;
 }
