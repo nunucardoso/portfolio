@@ -1,0 +1,66 @@
+
+
+.skills
+  margin:0 auto
+  margin-bottom: 40px
+
+.skills-lock
+  margin: 0 auto
+  max-width: 780px
+  font:
+    size: 15px
+    family: "HelveticaNeue-CondensedBold"
+    weight: bold
+  color: #767676
+  +display(flex)
+  +flex-direction(row)
+  +justify-content(space-between)
+  +align-content(center)
+  +flex-wrap(wrap)
+  +box-align(center)
+
+@media screen and (max-width: 750px)
+  .skills-lock
+    +justify-content(center)
+
+.skill p
+  padding-left: 10px  
+  max-width: 374px
+  text-align: left
+  margin-bottom: 5px
+
+.bar
+  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.2)
+  margin-bottom: 30px
+  height: 18px
+  width: 374px
+  border-radius: 10px
+  background:
+    color: lightgray
+
+.communication
+  @extend .bar
+  display: block
+  width: 90%
+  background:
+    color: #80a9ca
+
+.visual
+  @extend .communication
+  width: 95%
+
+.learning
+  @extend .communication
+  width: 90%
+
+.programming
+  @extend .communication
+  width: 70%
+
+.team
+  @extend .communication
+  width: 90%
+
+.usability
+  @extend .communication
+  width: 70%
