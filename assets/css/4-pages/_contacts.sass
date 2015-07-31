@@ -20,11 +20,14 @@
   a
     margin: 20px 0 40px 0
     opacity: 0.7
+    +size(70px)
+    +transition()
     path
       fill: #022849
 
     &:hover
         opacity: 1
+        +transform(scale(1.2))
 
 .form-lockup
   margin:0 auto
