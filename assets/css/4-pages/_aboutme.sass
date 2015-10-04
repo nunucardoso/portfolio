@@ -1,7 +1,7 @@
 .aboutme
-  max-width: 800px
+  // max-width: 700px
   // border: 1px red solid
-  margin: 0 auto
+  // margin: 0 auto
 
   // h3
   //   text-transform: uppercase
@@ -14,9 +14,17 @@
 
   div
     +display(inline-flex)
-    // margin: 0 auto
+    // border: 1px blue solid
+    margin: 0
     +align-items(center)
-    +justify-content(space-between)
+    // +justify-content(space-around)
+    +flex-wrap(wrap)
+    .icons
+      +display(flex)
+      // +flex-direction(column)
+      +justify-content(space-between)
+      // width: 100%
+      // border: 1px red solid
 
   [class^="icon-"]
     margin: 20px
@@ -42,30 +50,51 @@
     img
       border-radius: 50%
 
-
   p
     max-width: 620px
-    padding: 0 20px
-    margin: 50px auto
+    padding: 0 30px
+    margin: 40px auto
     font-size: 24px
     text-align: center
     font-weight: 300
-    padding-bottom: 20px
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 800px)
   .aboutme
-    display: block
-    text-align: center
-
-    div
-      display: inline-block
-
-    .avatar
-      display: block
-      background:
-        position: center center
-        repeat: no-repeat
-      margin: 0 auto 30px
-
     [class^="icon-"]
-      margin: 10px 9%
+      // border: 1px solid yellow
+      margin: 10px
+    div
+      // border: 1px solid pink
+
+@media screen and (max-width: 700px)
+  .aboutme
+    div
+      +flex-direction(row)
+      // border: 1px solid green
+      width: 90%
+      +justify-content(center)
+      +flex-wrap(wrap)
+
+      [class^="icon-"]
+        +flex(none)
+      .avatar
+        +order(1)
+        width: 100%
+        // border: 1px solid orange
+
+
+@media screen and (max-width: 450px)
+  .aboutme
+    div
+      +flex-direction(row)
+      // border: 1px solid green
+      width: 80%
+      +justify-content(center)
+      [class^="icon-"]
+      .avatar
+        // +order(1)
+        +flex-grow(4)
+        +flex-wrap(wrap)
+        // border: 1px solid orange
+    p
+      font-size: 20px

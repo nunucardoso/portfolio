@@ -3,13 +3,17 @@
     margin:0
     padding:0
     a
-      color: rgba(0,0,0,0.7)
+      color: rgba(0,0,0,0.6)
       font-family: $georgia
       font-size: 40px
       font-style: normal
-
       &:hover
         color: rgba(0,0,0,1)
+
+@media screen and (max-width: 530px)
+  address
+    #bigmail
+      font-size: 30px
 
 .social-links
   margin: 0 auto
@@ -21,13 +25,18 @@
     margin: 20px 0 40px 0
     opacity: 0.7
     +size(70px)
-    +transition()
+    +transition(.2s, ease-in)
     path
       fill: #022849
 
     &:hover
         opacity: 1
-        +transform(scale(1.2))
+        +transform(scale(1.1))
+
+@media screen and (max-width: 530px)
+  .social-links
+    +transform(scale(0.8))
+
 
 .form-lockup
   margin:0 auto
@@ -50,7 +59,7 @@
   textarea
     margin-top: 20px
     width: 575px
-    height: 200px
+    // height: 200px
 
 .form-top
   +display(flex)
@@ -63,7 +72,6 @@
   width: 600px
   text-align: right
 
-
   #button
     background-color: #4e6b82
     opacity: 0.7
@@ -72,6 +80,33 @@
     width: 130px
     padding: 0
     border-radius: 0
+    +transition(.2s, ease-in)
+
     &:hover
       opacity: 1
       border: 2px black solid
+
+@media screen and (max-width: 650px)
+  .form-lockup
+    margin: auto
+    // border: 1px solid red
+    width: 90%
+    // text-align: center
+  .form-top
+    +flex-direction(column)
+    +align-items(center)
+    input
+      width: calc(80% - 22px)
+      // border: 1px solid blue
+    #name
+      margin-bottom: 20px
+
+  .message
+    textarea
+      width: calc(100% - 22px)
+      // border: 1px solid yellow
+      display: block
+  .button
+    width: 100%
+    text-align: center
+    margin-bottom: 60px

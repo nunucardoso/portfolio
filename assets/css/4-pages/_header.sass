@@ -2,17 +2,17 @@
 .header
   max-width: 1020px
   max-height: 350px
-  text-align: center
+  // text-align: center
   // border: 2px black solid
   background:
     image: url(/assets/img/header-bg.jpg)
+    size: cover
     position: center
   margin: 0 auto
 
   nav
     float: right
     padding: 30px 30px 0 0
-
     a
       text-transform: uppercase
       margin-left: 20px
@@ -60,12 +60,26 @@
 
 
 @media screen and (max-width: 650px)
+  nav
+    // display: none
   .header
     h1
+      padding-top: 40px
       font-size: 40px
-
       .title-lockup
         border:  rgba(0,0,0,0.2) 10px solid
     h2
       padding-top: 15px
       padding-bottom: 50px
+
+@media screen and (max-width: 450px)
+  nav
+    a
+      display: none
+  .header
+    h1
+      font-size: 30px
+    h2
+      font-size: 17px
+      padding-top: 10px
+      padding-bottom: 40px
