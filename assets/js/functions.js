@@ -23,11 +23,26 @@ $( document ).ready(function() {
           $('#default').css('display','block');
           $('path').css('fill','#6597CA');
     });
+
     $(".icon-positive").click(function() {
           $('path').css('fill','#6597CA');
           $('.hero').css('display','none');
           $('#positive').css('display','block');
           $('.icon-positive path').css('fill','#022849');
+    });
+
+    $(".icon-coffee").click(function() {
+          $('path').css('fill','#6597CA');
+          $('.hero').css('display','none');
+          $('#coffee').css('display','block');
+          $('.icon-coffee path').css('fill','#022849');
+    });
+
+    $(".icon-talk").click(function() {
+          $('path').css('fill','#6597CA');
+          $('.hero').css('display','none');
+          $('#talk').css('display','block');
+          $('.icon-talk path').css('fill','#022849');
     });
 });
 
