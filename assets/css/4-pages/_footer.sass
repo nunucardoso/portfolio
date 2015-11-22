@@ -4,6 +4,7 @@
   background:
     image: url(/assets/img/footer-bg.jpg)
     position: center
+    size: cover
 
   nav
     padding: 30px 30px 20px 30px
@@ -26,7 +27,7 @@
   .copyright
     margin: 0
     padding: 20px 0 0 50px
-    font-size: 18px
+    font-size: 13px
     font-family: "HelveticaNeue-CondensedBold"
     color: rgb(71, 76, 80)
     font-weight: bold
@@ -34,5 +35,16 @@
     text-transform: uppercase
     text-align: left
 
-    span
+    span a
       color: #022849
+
+@media screen and (max-width: 450px)
+  // nav
+  //   display: none
+  .footer
+    height: 100px
+    .copyright
+      padding: 0 0 0 20px
+      // border: 1px solid black
+    // padding-bottom: 50px
+    // padding-bottom: 20px

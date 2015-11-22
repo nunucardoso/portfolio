@@ -2,8 +2,6 @@
 .header
   max-width: 1020px
   max-height: 350px
-  // text-align: center
-  // border: 2px black solid
   background:
     image: url(/assets/img/header-bg.jpg)
     size: cover
@@ -34,12 +32,10 @@
       size: 60px
       weight: 700
     color: black
-    text-transform: uppercase
     letter-spacing: 0.05em
     margin-bottom: 20px
     clear: both
     padding-top: 60px
-    mix-blend-mode: overlay
 
     span
     .title-lockup
@@ -48,15 +44,16 @@
     .thin
       font-weight: 200
 
+  h1,h2
+    mix-blend-mode: overlay
+
   h2
-    text-transform: uppercase
     padding-top: 30px
     padding-bottom: 100px
     font:
       family: "HelveticaNeue-CondensedBold"
       size: 20px
       weight: 400
-    mix-blend-mode: overlay
 
 
 @media screen and (max-width: 650px)
@@ -77,9 +74,11 @@
     a
       display: none
   .header
+    // height: 350px
     h1
+      // padding-top: 70px
       font-size: 30px
     h2
       font-size: 17px
       padding-top: 10px
-      padding-bottom: 40px
+      padding-bottom: 50px
